@@ -197,7 +197,7 @@ hr {
 }
 
 /* Responsive layout - makes a two column-layout instead of three columns */
-@media screen and (max-device-width: 900px) {
+@media screen and (min-device-width: 900px) {
     .column {
       width: 50%;
     }
