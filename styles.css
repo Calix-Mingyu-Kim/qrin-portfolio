@@ -59,7 +59,7 @@ body {
     color: #2B2B2B;  
     font-weight: 400;
     letter-spacing: 0.5em;
-    word-spacing: 1em;
+    word-spacing: 0.2em;
 }
 .right-side {
     font: 12px "Work Sans", sans-serif;
@@ -219,7 +219,7 @@ hr {
 }
 */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/*
+
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -228,7 +228,7 @@ hr {
         width: 100%;
     }
 }
-*/
+
 @media screen and (max-device-width: 500px) {
     .column {
       width: 100%;
