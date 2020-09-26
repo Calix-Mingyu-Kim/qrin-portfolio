@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Installation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="toggle-wrapper" id="toggleWrapper">
+            <button id="button" onclick="displayStatus()"><img id="pageStatus" src="images/fullscreenIcon.png"></button>
+            <button id="button" onclick="togglePopup()"><img src="images/gallery_icon2.png" alt=""></button>
+            <button id="button" onclick="location.href= 'index.html';"><img src="images/xIcon.png"></button>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"><img src="images/leftIcon.png" alt=""></a>
+        <a class="next" onclick="plusSlides(1)"><img src="images/rightIcon.png" alt=""></a>
+
+        <div style="z-index: 35; position: absolute; bottom: 10px; left: 48%; text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content" style="height: 320px;">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>HUMAN PUPA</h1>
+                    <h4>Acrylic paint, Pen, Iron net, Hair <br/>1 x 0.69 x 1 (m) <br/>Independent work, 2019 Summer</h4>
+                    <hr/>
+                    <p class="text">As silkworm produces their shelter with their own resources,
+                        human also should create self-producing house with available
+                        material in their own body. This work demonstrates that pupa
+                        made of human hair is the most intrinsic space for us since it is
+                        created with our own resources and it does not cause any
+                        excessive waste of natural resources and environment pollution. </p>
+            </div>
+            <div class="content" style="height: 320px;">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>HUMAN PUPA</h1>
+                    <h4>Acrylic paint, Pen, Iron net, Hair <br/>1 x 0.69 x 1 (m) <br/>Independent work, 2019 Summer</h4>
+                    <hr/>
+                    <p class="text">As silkworm produces their shelter with their own resources,
+                        human also should create self-producing house with available
+                        material in their own body. This work demonstrates that pupa
+                        made of human hair is the most intrinsic space for us since it is
+                        created with our own resources and it does not cause any
+                        excessive waste of natural resources and environment pollution. </p>
+            </div>
+        </div>
+       
+        <div class='container-IMG'>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="images/humanPupa1.jpg" class="imgIDleft" alt="humanPupa1">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="images/humanPupa2.jpg" class="imgIDleft" alt="humanPupa2">
+            </div>
+        </div>
+    
+
+    </div>
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
