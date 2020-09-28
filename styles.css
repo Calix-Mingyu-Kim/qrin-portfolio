@@ -161,10 +161,10 @@ html, body {
     text-align: center;
     width: 100%;
     height: auto;
-    overflow: hidden;
     position: absolute;
-    box-sizing: border-box;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .toggle-wrapper {
@@ -430,4 +430,3 @@ hr {
         width: 100%;
     }
 }
-
