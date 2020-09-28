@@ -326,6 +326,7 @@ hr {
 
 /* Number text (1/3 etc) */
 .numbertext {
+    display: none;
     color: gray;
     font-size: 15px;
     padding: 15px 30px;
@@ -373,46 +374,14 @@ hr {
 
 
 
-/* Responsive layout - makes a two column-layout instead of three columns */
+/* Responsive layout - makes a two column-layout instead of one column */
 @media screen and (max-width: 900px) {
     .column {
       width: 50%;
     }
 }
-/*
-@media screen and (max-width: 850px) {
-    .right-side {
-      font-size: 18px;
-    }
-    .left-side {
-        font-size: 27px;
-        padding: 14px 16px;
-    }
-    .nav-wrapper {
-        padding: 15px;
-    }
-    .nav-link-wrapper a{
-        padding: 14px 16px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .right-side {
-        font-size: 15px;
-    }
-    .left-side {
-        font-size: 20px;
-        padding: 14px 4px;
-    }
-    .nav-wrapper {
-        padding: 15px 2px;
-    }
-    .nav-link-wrapper a{
-        padding: 14px 3px;
-    }
-}
-*/
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -422,11 +391,16 @@ hr {
     }
 }
 
+
 @media screen and (max-device-width: 500px) {
     .column {
       width: 100%;
     }
     .image img{
         width: 100%;
+    }
+    
+    .numbertext {
+        font-size: 20px;
     }
 }
